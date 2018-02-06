@@ -1,0 +1,6 @@
+.has-error {
+    border-color: red;
+}
+span.message {
+    color: red;
+}

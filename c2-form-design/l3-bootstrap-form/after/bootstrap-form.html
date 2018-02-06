@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <!--<link href="bootstrap-form.css" rel="stylesheet"/>-->
+        <link href="../../../libraries/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Registration Page</h1>
+            </div>
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" name="name"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" name="email"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Age</label>
+                    <input class="form-control" id="number" name="number"/>
+                </div>
+
+                <div class="form-group">
+                    <div>Gender</div>
+                    <div class="radio">
+                        <label><input type="radio" name="gender" value="male"/>Male</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="gender" value="female"/>Female</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="gender" value="others"/>Others</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>Languages</div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="english"/>English</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="hindi"/>Hindi</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="german"/>German</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="french"/>French</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea class="form-control" name="bio" id="bio" rows="4" cols="40"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input class="btn btn-default" type="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

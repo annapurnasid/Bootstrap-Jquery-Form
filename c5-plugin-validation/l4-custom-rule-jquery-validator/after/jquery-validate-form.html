@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link href="../../../libraries/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Registration Page</h1>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="name">Name</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="name" name="name"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="email">Email</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="email" name="email"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="number">Age</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="number" name="number"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Gender</label>
+                    <div class="col-sm-10">
+                        <div class="radio">
+                            <label><input type="radio" name="gender" value="male"/>Male</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="gender" value="female"/>Female</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="gender" value="others"/>Others</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Languages</label>
+                    <div class="col-sm-10">
+                        <div class="checkbox">
+                            <label><input name="language[]" type="checkbox" value="english"/>English</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="language[]" type="checkbox" value="hindi"/>Hindi</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="language[]" type="checkbox" value="french"/>French</label>
+                        </div>
+                        <span class="error-container"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input class="btn btn-primary" type="submit" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="../../../libraries/jquery-3.2.1.min.js"></script>
+        <script src="../../../libraries/bootstrap.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        <script src="custom.js"></script>
+    </body>
+</html>

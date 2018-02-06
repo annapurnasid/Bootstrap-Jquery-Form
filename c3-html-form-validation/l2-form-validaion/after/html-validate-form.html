@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link href="../../../libraries/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Registration Page</h1>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="name">Name</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="name" name="name" required
+                            pattern="[A-Za-z]+\s[A-Za-z]+"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="email">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="email"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="number">Age</label>
+                    <div class="col-sm-10">
+                        <input pattern="[0-9]{2}" class="form-control" id="number" name="number"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Gender</label>
+                    <div class="col-sm-10">
+                        <div class="radio">
+                            <label><input type="radio" name="gender" value="male" checked/>Male</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="gender" value="female"/>Female</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="gender" value="others"/>Others</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Languages</label>
+                    <div class="col-sm-10">
+                        <div class="checkbox">
+                            <label><input name="language[]" type="checkbox" value="english"/>English</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="language[]" type="checkbox" value="hindi"/>Hindi</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="language[]" type="checkbox" value="french"/>French</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="bio">Bio</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="bio" id="bio" rows="4" cols="40"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input class="btn btn-primary" type="submit" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="../../../libraries/jquery-3.2.1.min.js"></script>
+        <script src="../../../libraries/bootstrap.min.js"></script>
+    </body>
+</html>
